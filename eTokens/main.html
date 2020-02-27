@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="../style.css">
+
+</html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="jquery.js"></script>
+  <script>
+  $(function(){
+    $("#navpack").load("../nav_pack.html");
+  });
+  </script>
+
+
+  <title>Services</title>
+</head>
+<body>
+
+  <div class="my-container">
+    <div class="my-header"><h3>ISEA header</h3></div>
+    <div class="body-container">
+      <div class="my-navigation">
+        <div id="navpack"></div>
+      </div>
+      <div class="content">
+        <h1 class="center-header">eTokens</h1>
+        <!-- navigation from bootstrap -->
+        <ul class="nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#home">About</a></li>
+          <li><a data-toggle="tab" href="#setup">Set-up</a></li>
+          <li><a data-toggle="tab" href="#das">For Department Administrators</a></li>
+          <li><a data-toggle="tab" href="#csas">Common Situations and Solutions</a></li>
+          <li><a data-toggle="tab" href="#faq">FAQ</a></li>
+          <li><a data-toggle="tab" href="#cusc">Common Use Cases</a></li>
+          <li><a data-toggle="tab" href="#news">News</a></li>
+        </ul>
+
+
+
+        <div class="tab-content">
+          <div id="home" class="tab-pane fade in active">
+            <h3 class="center-header">What is an eToken?</h3>
+              <ul id="oon">
+                <li>The eToken is the University’s multi-factor authentication product, and is used to connect to high-value applications like AMS, ARBOR, and ROSI. </li>
+                <li>It is a small USB device that is plugged into your computer or laptop when you require access to these systems. </li>
+                <li>Multifactor Authentication (MFA) is a method of authentication that provides high assurance of identity and is often defined as a combination of something you have (the eToken) with something you know (your UTORID and password). This method of authentication provides higher assurance of identity than use of UTORID and password alone. </li>
+              </ul>
+            <h3 class="center-header">Who needs an eToken?</h3>
+              <p id="oon">Information Security and Enterprise Architecture supplies the hardware to departments. The department distributes and manages the use of the eToken at a departmental level.</p>
+              <p id="oon">The services and applications that make use of eTokens at the University are ever expanding. Applications that make use of the eToken are able to provide users directly with technical instruction.  </p>
+              <p id="oon">Here is a list of enterprise level applications that currently make use of eToken authentication. If you are University staff who use one of the systems listed below it is likely you will need an eToken.</p>
+              <p id="oon">Please Note: Various departments have integrated eToken authentication into departmental specific applications or services. Your business Officer will notify you of any departmental requirements for eToken use. The list below is not a complete list.</p>
+              <ul id="oot">
+                <li>ROSI</li>
+                <li>AMS</li>
+                <li>ARBOR</li>
+                <li>StarRez</li>
+                <li>UtorAUTH</li>
+              </ul>
+          </div>
+
+
+
+
+          <div id="setup" class="tab-pane fade">
+            <h3>Menu 1</h3>
+            <p>Some content in menu 1.</p>
+          </div>
+
+
+
+
+          <div id="das" class="tab-pane fade">
+            <h3 class="center-header">For Department Administators</h3>
+            <button class="collapsible">New User Enrol Step-by-step Procedures</button>
+            <div class="colla" >
+              <p>This section provides instructions and screen shots describing the typical functions that a department
+                administrator may expect to encounter. In order to perform these tasks, the department administrator (DA for
+                short), must have the following prerequisites: </p>
+              <ol type="1" id="oon">
+                <li> an eToken issued to themselves by the ITS eToken administrator. </li>
+                <li>the desktop computer used to run the SafeNet Authentication Manager (SAM) must run a current Windows
+                  operating system. </li>
+              </ol>
+              <p>The Internet Explorer web browser must be used to interact with SAM and must be configured as described in
+                the Technical Information section.</p>
+              <p>You must have a supply of blank eTokens which can be used for issuing. Contact the ITS eToken
+                administrator to obtain blank eTokens. </p>
+              <b>Enrolling a New User</b>
+              <ol type="1" id="oon">
+                <li>Insert a blank eToken.</li>
+                <li>Access SAM by inserting your eToken, open Internet Explorer, and access the URL: </li>
+                <a href="https://ekey.utoronto.ca/sammanage/">https://ekey.utoronto.ca/sammanage/</a>
+                <li>You will notice your UTORid in the upper right</li>
+                <li>Select 'Deployment'</li>
+                <li>'Search for:' users by username</li>
+                <li>'Search criteria:' Enter the UTORid of the enrollee. </li>
+                <li>Select 'Go'</li>
+                <li> SAM will display the UTORid under the 'account name'. Ensure that the status of the account is: 'No token'</li>
+                <li> Check the box beside the correct UTORid, select 'Enroll' button. </li>
+                  <img src="./imgs/sample_enroll_1.png" style="width:75%;height:75%;">
+                <li>SAM will process and stop at the following point:</li>
+                <li> Select 'Run'. SAM will enroll the user and populate the eToken with a certificate. This will take up to a minute.</li>
+                  <img src="./imgs/sample_enroll_2.png" style="width:75%;height:75%;">
+                <li>Click the 'Done' button. The eToken is now ready for the user. </li>
+              </ol>
+              <b>Notes:</b>  The DA cannot and should not assign an eToken to a person who already has one
+            </div>
+            <button class="collapsible">Un-assign User Step-by-Step Procedures</button>
+            <div class="colla">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button class="collapsible">Un-assign User Step-by-Step Procedures</button>
+            <div class="colla">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button class="collapsible">Unlock eToken Remotely</button>
+            <div class="colla">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button class="collapsible">Password Resets</button>
+            <div class="colla">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button class="collapsible">Replacing Lost or Forgotten eTokens Step by Step Procedure</button>
+            <div class="colla">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button class="collapsible">Initializing Returned/Found eTokens</button>
+            <div class="colla">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button class="collapsible">Replacing Damaged eTokens</button>
+            <div class="colla">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+
+
+
+
+          <div id="csas" class="tab-pane fade">
+            <h3>CSAS</h3>
+            <p>Some content in CSAS.</p>
+          </div>
+
+
+
+
+          <div id="faq" class="tab-pane fade">
+            <h3>FAQ</h3>
+            <p>Some content in FAQ.</p>
+          </div>
+
+
+
+          <div id="cusc" class="tab-pane fade">
+            <h3>Common Use Cases</h3>
+            <p>Some content in CUSC.</p>
+          </div>
+
+
+
+
+          <div id="news" class="tab-pane fade">
+            <h3>News</h3>
+            <p>Some content in News.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer">footer</div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <script src="index.js"></script>
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+    </script>
+</body>
