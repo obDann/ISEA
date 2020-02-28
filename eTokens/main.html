@@ -13,6 +13,10 @@
   <script>
   $(function(){
     $("#navpack").load("../nav_pack.html");
+    $("#about").load("./about.html");
+    $("#setup").load("./setup.html");
+    $("#faq").load("./faq.html");
+    $("#news").load("./news.html");
   });
   </script>
 
@@ -31,7 +35,7 @@
         <h1 class="center-header">eTokens</h1>
         <!-- navigation from bootstrap -->
         <ul class="nav nav-tabs">
-          <li class="active"><a data-toggle="tab" href="#home">About</a></li>
+          <li class="active"><a data-toggle="tab" href="#about">About</a></li>
           <li><a data-toggle="tab" href="#setup">Set-up</a></li>
           <li><a data-toggle="tab" href="#das">For Department Administrators</a></li>
           <li><a data-toggle="tab" href="#csas">Common Situations and Solutions</a></li>
@@ -43,34 +47,12 @@
 
 
         <div class="tab-content">
-          <div id="home" class="tab-pane fade in active">
-            <h3 class="center-header">What is an eToken?</h3>
-              <ul id="oon">
-                <li>The eToken is the University’s multi-factor authentication product, and is used to connect to high-value applications like AMS, ARBOR, and ROSI. </li>
-                <li>It is a small USB device that is plugged into your computer or laptop when you require access to these systems. </li>
-                <li>Multifactor Authentication (MFA) is a method of authentication that provides high assurance of identity and is often defined as a combination of something you have (the eToken) with something you know (your UTORID and password). This method of authentication provides higher assurance of identity than use of UTORID and password alone. </li>
-              </ul>
-            <h3 class="center-header">Who needs an eToken?</h3>
-              <p id="oon">Information Security and Enterprise Architecture supplies the hardware to departments. The department distributes and manages the use of the eToken at a departmental level.</p>
-              <p id="oon">The services and applications that make use of eTokens at the University are ever expanding. Applications that make use of the eToken are able to provide users directly with technical instruction.  </p>
-              <p id="oon">Here is a list of enterprise level applications that currently make use of eToken authentication. If you are University staff who use one of the systems listed below it is likely you will need an eToken.</p>
-              <p id="oon">Please Note: Various departments have integrated eToken authentication into departmental specific applications or services. Your business Officer will notify you of any departmental requirements for eToken use. The list below is not a complete list.</p>
-              <ul id="oot">
-                <li>ROSI</li>
-                <li>AMS</li>
-                <li>ARBOR</li>
-                <li>StarRez</li>
-                <li>UtorAUTH</li>
-              </ul>
-          </div>
+          <div id="about" class="tab-pane fade in active"></div>
 
 
 
 
-          <div id="setup" class="tab-pane fade">
-            <h3>Menu 1</h3>
-            <p>Some content in menu 1.</p>
-          </div>
+          <div id="setup" class="tab-pane fade"></div>
 
 
 
@@ -145,32 +127,139 @@
 
 
           <div id="csas" class="tab-pane fade">
-            <h3>CSAS</h3>
-            <p>Some content in CSAS.</p>
+            <h3 class="center-header">Common Situations and Solutions</h3>
+            <div id="oon">
+            Departmental <a href="https://isops.noc.utoronto.ca/etokendbmodification/Admincheck">eToken Administrators</a> UTORid and UTORid password required can assist with the most common problems . If your Departmental Administrator is not able to help with your problem, please <a href="https://isea.utoronto.ca/contact/">contact us</a> with the following information: 
+
+            <p>Name</p>
+            <p>UTORid</p>
+            <p>Department/Division (Faculty) </p>
+            <p>System you are trying to connect to </p>
+            <p>Description of the problem, including any steps taken so far to fix the problem </p>
+
+            <table class="table" data-tablelook="1184" data-tablestyle="MsoTableGrid">
+              <tbody>
+              <tr>
+              <td data-celllook="0"><b>Issue:</b><span data-ccp-props="{}"> </span></td>
+              <td data-celllook="0"><b>Action:</b><span data-ccp-props="{}"> </span></td>
+              </tr>
+              <tr>
+              <td data-celllook="0">Request an eToken<span data-ccp-props="{}"> </span></td>
+              <td data-celllook="0"><a href="https://isops.noc.utoronto.ca/etokendbmodification/Admincheck">Contact Departmental Administrator</a></td>
+              </tr>
+              <tr>
+              <td data-celllook="0">Forgotten Password/Locked eToken<span data-ccp-props="{}"> </span></td>
+              <td data-celllook="0"><a href="https://isops.noc.utoronto.ca/etokendbmodification/Admincheck">Contact Departmental Administrator</a></td>
+              </tr>
+              <tr>
+              <td data-celllook="0">Lost or Forgotten eToken<span data-ccp-props="{}"> </span></td>
+              <td data-celllook="0"><a href="https://isops.noc.utoronto.ca/etokendbmodification/Admincheck">Contact Departmental Administrator</a></td>
+              </tr>
+              <tr>
+              <td data-celllook="0">Cannot connect to Cisco Anyconnect<span data-ccp-props="{}"> </span></td>
+              <td data-celllook="0">Contact eToken service desk : auth.admin@utoronto.ca</td>
+              </tr>
+              <tr>
+              <td data-celllook="0">Can connect to Cisco Anyconnect but cannot connect to AMS (FIS, HRIS, etc)<span data-ccp-props="{}"> </span></td>
+              <td data-celllook="0">Contact AMS help: access.easi@utoronto.ca</td>
+              </tr>
+              <tr>
+              <td data-celllook="0">Can connect to Cisco Anyconnect but cannot connect to ROSI<span data-ccp-props="{}"> </span></td>
+              <td data-celllook="0">Contact ROSI help: rosi.help@utoronto.ca<span data-ccp-props="{}"> </span></td>
+              </tr>
+              <tr>
+              <td data-celllook="0">Transferring to a different U of T Department<span data-ccp-props="{}"> </span></td>
+              <td data-celllook="0">Keep your eToken<span data-ccp-props="{}"> </span></td>
+              </tr>
+              <tr>
+              <td data-celllook="0">Leaving the University<span data-ccp-props="{}"> </span></td>
+              <td data-celllook="0"><a href="https://isops.noc.utoronto.ca/etokendbmodification/Admincheck">Return eToken to Departmental Administrator</a></td>
+              </tr>
+              </tbody>
+              </table>
+            </div>
           </div>
 
 
 
 
-          <div id="faq" class="tab-pane fade">
-            <h3>FAQ</h3>
-            <p>Some content in FAQ.</p>
-          </div>
+          <div id="faq" class="tab-pane fade"></div>
 
 
 
           <div id="cusc" class="tab-pane fade">
-            <h3>Common Use Cases</h3>
-            <p>Some content in CUSC.</p>
+            <h3 class="center-header">Common Use Cases</h3>
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#windows">Cisco AnyConnect on Windows</button>
+            <div id="windows" class="collapse">
+              <p>The Cisco AnyConnect Client must be installed before using UTORvpn on windows.</p>
+              <ol type="1" id="oon">
+                <li>Download the Windows Client file from <a href="https://isops.noc.utoronto.ca/download/">https://isops.noc.utoronto.ca/download/</a>. You must have a valid UTORid and be eligible for the service.</li>
+                <li>Run the installer file, and accept the licence agreement.</li>
+                <li>You will need to be an administrator on your computer to finish installing the client. If you are on a managed workstation, contact your IT support to have them deploy the AnyConnect client.</li>
+              </ol>
+            </div>
+            <div></div>
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#mac">Cisco AnyConnect on Mac</button>
+            <div id="mac" class="collapse">
+              <p>The Cisco AnyConnect Client must be installed before using UTORvpn on OS X.</p>
+              <ol type="1" id="oon">
+                <li>Download the Mac Client file from <a href="https://isops.noc.utoronto.ca/download/">https://isops.noc.utoronto.ca/download/</a>. You must have a valid UTORid and be eligible for the service.</li>
+                <li>Open the .dmg file, an administrator on your computer to do this.</li>
+                <li>Double click on AnyConnect.pkg to start the installer.</li>
+                <li>Click Continue and accept the Licence.</li>
+                <li>Uncheck all modules except VPN. Click Continue.</li>
+                <img src="https://isea.utoronto.ca/wp-content/uploads/2019/06/Screen-Shot-2019-06-19-at-10.17.27-AM-768x542.png" style="width:25%;height:25%;">
+                <li>Complete the install</li>
+              </ol>
+            </div>
+            <div></div>
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#linux">Cisco AnyConnect on Linux</button>
+            <div id="linux" class="collapse">
+              <p>The Cisco AnyConnect Client must be installed before using UTORvpn on Linux.</p>
+              <ol type="1" id="oon">
+                <li>Download the Linux Client file from <a href="https://isops.noc.utoronto.ca/download/">https://isops.noc.utoronto.ca/download/</a>. You must have a valid UTORid and be eligible for the service.</li>
+                <li>Navigate to your Downloads folder an extract tar.gz file to a directory.</li>
+                <li>Navigate to the VPN directory in the extracted directory. Right click in the directory and choose Open In Terminal.</li>
+                <li>Run the command: <code>sudo bash vpn_install.sh</code> and enter your password</li>
+                <li>Agree to the licence agreement and the install will complete</li>
+              </ol>
+            </div>
+            <div></div>
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#d1">Open SSH</button>
+            <div id="d1" class="collapse">
+              <p>This is dummy data</p>
+            </div>
+            <div></div>
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#d2">Windows Remote Desktop Client</button>
+            <div id="d2" class="collapse">
+              <p>This is dummy data</p>
+            </div>
+            <div></div>
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#d3">ROSI</button>
+            <div id="d3" class="collapse">
+              <p>This is dummy data</p>
+            </div>
+            <div></div>
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#d4">SAPgui</button>
+            <div id="d4" class="collapse">
+              <p>This is dummy data</p>
+            </div>
+            <div></div>
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#d5">Apache https Server</button>
+            <div id="d5" class="collapse">
+              <p>This is dummy data</p>
+            </div>
+            <div></div>
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#d6">Browsers - Firefox</button>
+            <div id="d6" class="collapse">
+              <p>This is dummy data</p>
+            </div>
           </div>
 
 
 
 
-          <div id="news" class="tab-pane fade">
-            <h3>News</h3>
-            <p>Some content in News.</p>
-          </div>
+          <div id="news" class="tab-pane fade"></div>
 
         </div>
       </div>
