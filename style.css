@@ -97,3 +97,13 @@ p {
 #pdpls{
   padding-top: 20px;
 }
+
+#plspad{
+  padding-top: 800px;
+}
+
+#ldivi{
+  background-color: #777;
+  padding-left: 75%; 
+  padding-top: 10px;
+}
